@@ -1,0 +1,406 @@
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 38px;
+  margin-bottom: 24px;
+  width: 80.36%;
+  padding-left: 9.3%;
+}
+
+.header__logo {
+  display: inline-flex;
+}
+
+.header__logo_img1 {
+  position: absolute;
+  padding-left: 18px;
+  padding-top: 6px;
+  z-index: 2;
+}
+
+.header__logo_img2 {
+  position: relative;
+  padding-right: 17px;
+  margin-left: 11px;
+}
+
+.header__logo_name {
+  font-family: 'PTSerif-Bold';
+  font-size: 24px;
+  line-height: 31.8px;
+}
+
+.header__links {
+  display: flex;
+  font-family: 'Roboto-Medium';
+  font-size: 18px;
+  line-height: 21.09px;
+  justify-content: space-between;
+  width: 24.5%;
+  padding-top: 9px;
+}
+
+.header__link {
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: 2px solid;
+  padding-bottom: 4px;
+  border-color: #fff;
+  color: #000;
+}
+
+.header__link:hover {
+  border-color: #0056ec;
+  opacity: 0.5;  
+}
+
+#checkbox_id {
+  display: none;
+}
+
+label {
+  display: none;
+}
+
+.header__burger {
+  display: none;
+}
+
+.main {
+  background-image: url(../images/Frame.png);
+  background-position: 83% 78%;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  padding-top: 9%;
+  padding-bottom: 9%;
+  margin-bottom: 4.5%;
+}
+
+h1 {
+  font-family: 'PTSerif-Bold';
+  font-size: 66px;
+  line-height: 87.45px;
+}
+
+h2 {
+  font-family: 'Roboto-Regular';
+  font-size: 22px;
+  line-height: 25.78px;
+  font-weight: 400;
+}
+
+.main__wrap {
+  width: 30%;
+  margin-left: 10%;
+}
+.main__title {
+  margin-bottom: 6.5%;
+}
+
+.fill {
+  background: linear-gradient(180deg, #fff, #ecf3ff);
+} 
+
+.main__description {
+  width: 75%;
+  margin-bottom: 8%;
+}
+
+.main__button {
+  outline: none;
+  background-color: #0056ec ;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  width: 270.75px;
+  height: 57px;
+  font-family: 'Roboto-Medium';
+  font-size: 18px;
+  line-height: 21.09px;
+}
+
+.main__button:hover {
+  opacity: 0.5;
+}
+
+.main__button:active {
+  background-color: #c8dbfb;
+  color: #0056ec;
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1500px){
+
+  .header {
+    margin-left: 14.6%;
+    width: 69.3%;
+    padding-left: 0;
+  }
+
+  .header__logo_name {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .header__links {
+    font-size: 14px;
+    width: 33.5%;
+  }
+
+  .header__link {
+    padding-bottom: 1px;
+  }
+
+  .main {
+    background-size: 38%;
+    background-position: 75% 97%;
+    padding-top: 6%;
+    padding-bottom: 17%;
+    margin-top: 0;
+    margin-bottom: 5.5%;
+  }
+
+  .main__wrap {
+    width: 31%;
+    height: 26vh;
+    margin-left: 15.5%;
+  }
+
+  h1 {
+    font-size: 50px;
+    line-height: 66.25px;
+  }
+
+  h2 {
+    font-size: 18px;
+    line-height: 21.09px;
+  }
+  
+  .main__title {
+    margin-bottom: 10%;
+  }
+
+  .main__description {
+    width: 83%;
+    margin-bottom: 11%;
+  }
+
+  .main__button {
+    font-size: 14px;
+    width: 209px;
+    height: 44px;
+  }
+
+}
+
+@media (max-width: 1025px){
+
+  .header {
+    margin-left: 2.5%;
+    width: 93.5%;
+    margin-bottom: 0;
+  }
+
+  .main {
+    background-size: 51%;
+    background-position: 92% 80%;
+    padding-top: 11%;
+    padding-bottom: 25%;
+  }
+
+  .main__wrap {
+    width: 39%;
+    height: 36vh;
+    margin-left: 38px;
+  } 
+
+  .main__description {
+    width: 97%;
+    margin-bottom: 10%;
+  }
+
+}
+
+@media (max-width: 769px) {
+
+  .header {
+    justify-content: space-around;
+    margin-bottom: 8%;
+  }
+
+  .main {
+    background-size: 65%;
+    background-position: 50% 0%;
+    text-align: center;
+  }
+
+ 
+  .main__wrap {
+    width: 56%;
+    margin-left: 24%;
+    margin-top: 43%;
+    text-align: center;
+  }
+
+  footer {
+    display: none;
+  }
+
+}
+
+@media (max-width: 685px) {
+
+  label {
+    display: block;
+  }
+
+  .header__links {
+    display: none;
+  }
+
+  .header__burger {
+    display: inline-block;
+    position: relative;
+    width: 25px;
+    height: 17px;
+    cursor: pointer;
+  }
+
+  .burger__line {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #0056EC;
+    top: 7px;
+  }
+
+  .header__burger::before,
+  .header__burger::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #0056EC;
+    position: absolute;
+    transition: .3s ease;
+  }
+
+  .header__burger::before {
+    top: 0;
+  }
+
+  .header__burger::after {
+    bottom: 0;
+  } 
+
+  #checkbox_id:checked ~ .header__logo {
+    display: none;
+  }
+   
+  #checkbox_id:checked ~ {
+
+  }
+
+
+  #checkbox_id:checked ~ .header__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    top: 0;
+    left:0;
+  }
+
+  #checkbox_id:checked ~ .header__links > .header__link {
+    margin-bottom: 13%;
+  }
+
+  #checkbox_id:checked ~ label > .header__burger > .header__line {
+    display: none;
+  }
+
+  #checkbox_id:checked ~ label > .header__burger::before {
+    top: 7px;
+    transform: rotate(45deg); 
+    z-index: 2;  
+  }
+  
+  #checkbox_id:checked ~ label > .header__burger::after {
+    top: 7px;
+    transform: rotate(-45deg);
+    z-index: 2;
+  }
+
+  #checkbox_id:checked ~ label {
+    position: absolute;
+    top: 31px;
+    right: 7%;
+  }
+
+}
+
+@media (max-width: 376px) {
+
+   .header {
+    margin-top: 7%;
+    margin-bottom: 10%;
+    justify-content: space-between;
+    width: 94%;
+    margin-left: 7px;
+   }
+
+  .header__logo_name {
+    display: none;
+  }
+
+  .main {
+    background-size: 76%;
+    background-position: 50% 0%;
+  }
+
+  .main__wrap {
+    width: 267px;
+    margin-left: 13%;
+    margin-top: 60%;
+  }
+
+  h1 {
+    font-size: 30px;
+    line-height: 39.75px;
+  }
+
+  h2 {
+    font-size: 16px;
+    line-height: 18.75px;
+  }
+
+  .main__title {
+    margin-bottom: 33px;
+  }
+
+  .main__description {
+    margin-left: 3%;
+    width: 254px;
+    margin-bottom: 28px;
+  }
+
+  .main__button {
+    font-size: 14px;
+    width: 209px;
+    height: 44px;
+  }
+
+}
